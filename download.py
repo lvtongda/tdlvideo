@@ -20,6 +20,6 @@ urls = match.group(1).split('|')
 urls.pop()
 
 for k, v in enumerate(urls):
-    print '>downloading Block %.2d ...' % (k+1,)
-    urllib.urlretrieve(v, str(k) + title + '.flv')
-    print 'downloading Block.%.2d completely<' % (k+1,)
+    print 'Downloading block %.2d ...' % (k+1)
+    urllib.urlretrieve(v, str(k+1) + '-' + title + '.flv')
+    print 'Downloading block %.2d completely' % (k+1)
