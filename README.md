@@ -5,7 +5,7 @@ To download online videos.
 #### Use
 
 ```
-python download.py 
+$ python download.py 
 You must input the url of the video: 
 You can input the custom name of the video or not: 
 You can input the definition of the video or not: 
