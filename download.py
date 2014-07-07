@@ -6,9 +6,10 @@ import urllib
 import urllib2
 import re
 
-videourl = raw_input('Please input the video url of cntv: ')
-title = raw_input('Please input the title of the video: ')
-url = 'http://www.flvcd.com/parse.php?kw=' + urllib.quote(videourl) + '&format=high'
+videourl = raw_input('You must input the url of the video: ')
+title = raw_input('You can input the custom name of the video or not: ')
+quality = raw_input('You can input the definition of the video or not: ')
+url = 'http://www.flvcd.com/parse.php?kw=' + urllib.quote(videourl) + '&format=' + quality
 req = urllib2.Request(url)
 req.add_header('host', 'www.flvcd.com')
 res = urllib2.urlopen(req)

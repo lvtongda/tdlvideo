@@ -6,8 +6,11 @@ To download online videos.
 
 ```
 python download.py 
-Please input the video url of cntv: 
-Please input the title of the video: 
+You must input the url of the video: 
+You can input the custom name of the video or not: 
+You can input the definition of the video or not: 
 ```
 
-Now, only support cntv.
+If you don't input the definition, it is default. And also can be `high` or `super`.
+
+Based on FLVCD, support cntv, youku, qq, ku6, 56, fun, ifeng, 163, joy, wasu and so on.
